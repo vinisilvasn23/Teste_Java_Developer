@@ -41,15 +41,14 @@ A aplicação estará disponível em http://localhost:8080.
 
   - Criar um novo usuario como empresa.
   - Corpo da Requisição:
-    ```json
-    {
-   "name": "Empresa",
+    ```json{
+  	 "name": "Empresa",
 	"password":"Empresa123",
 	"cpfCnpj":"12345678915123",
 	"email":"empresa@mail.com",
 	"type": "company",
 	"fee": 2
-}```
+	}```
 
   - Resposta do Servidor:
     ```json
