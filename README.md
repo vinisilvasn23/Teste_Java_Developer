@@ -47,8 +47,8 @@ A aplicação estará disponível em http://localhost:8080.
 	"cpfCnpj":"12345678915123",
 	"email":"empresa@mail.com",
 	"type": "company",
-	"fee": 2
-	}```
+	"fee": 2}
+    ```
 
   - Resposta do Servidor:
     ```json
@@ -59,8 +59,8 @@ A aplicação estará disponível em http://localhost:8080.
 	"email": "empresa@mail.com",
 	"type": "company",
 	"balance": 0,
-	"fee": 2
-}```
+	"fee": 2}
+    ```
  - Criar um novo usuário como cliente.
   - Corpo da Requisição:
     ```json
