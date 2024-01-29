@@ -41,7 +41,8 @@ A aplicação estará disponível em http://localhost:8080.
 
   - Criar um novo usuario como empresa.
   - Corpo da Requisição:
-    ```json{
+    ```json
+    {
   	 "name": "Empresa",
 	"password":"Empresa123",
 	"cpfCnpj":"12345678915123",
@@ -65,12 +66,12 @@ A aplicação estará disponível em http://localhost:8080.
   - Corpo da Requisição:
     ```json
     {
-   "name": "Client",
+   	"name": "Client",
 	"password":"client123",
 	"cpfCnpj":"12345678912",
 	"email":"client@mail.com",
-	"type": "client"
-}```
+	"type": "client"}
+    ```
 
   - Resposta do Servidor:
     ```json
@@ -81,16 +82,15 @@ A aplicação estará disponível em http://localhost:8080.
 	"email": "client@mail.com",
 	"type": "client",
 	"balance": 0,
-	"fee": null
-}```
+	"fee": null}
+    ```
 
 - **GET /users**
 
   - Lista todos os usuários
   - Resposta do Servidor (exemplo):
     ```json
-    [
-	{
+    [{
 		"id": 1,
 		"name": "Client",
 		"cpfCnpj": "12345678912",
@@ -107,17 +107,17 @@ A aplicação estará disponível em http://localhost:8080.
 		"type": "company",
 		"balance": 0.00,
 		"fee": 2.00
-	}
-]```
+	}]
+	```
 
 - **POST /users/:id/deposit**
 
   - Realizar um depósito ao usuário.
   - Corpo da Requisição:
     ```json
-    {
-  "value": 1000
-  }```
+    	{
+  	"value": 1000}
+    ```
   - Resposta do Servidor (exemplo):
    ```json
     {
@@ -127,8 +127,8 @@ A aplicação estará disponível em http://localhost:8080.
 	"email":"client@mail.com",
 	"type": "client"
 	"balance": 1000.00,
-	"fee": null
-}```
+	"fee": null}
+	```
 
 - **POST /transactions**
 
@@ -139,8 +139,8 @@ A aplicação estará disponível em http://localhost:8080.
 	"clientId": 2,
 	"companyId": 1,
 	"type": "transfer",
-	"amount": 5
-}```
+	"amount": 5}
+    ```
 
   - Resposta do Servidor (exemplo):
    ```json
@@ -166,9 +166,8 @@ A aplicação estará disponível em http://localhost:8080.
 	},
 	"amount": 5,
 	"type": "transfer",
-	"date": "2024-01-29T19:27:54.062+00:00"
-}
-```
+	"date": "2024-01-29T19:27:54.062+00:00"}
+ 	```
 
 - **GET /users/:id**
 
@@ -182,8 +181,8 @@ A aplicação estará disponível em http://localhost:8080.
 	"email": "client@mail.com",
 	"type": "client",
 	"balance": 0.00,
-	"fee": null
-}```
+	"fee": null}
+	```
 
 - **PATCH /users/:id**
 
@@ -191,9 +190,8 @@ A aplicação estará disponível em http://localhost:8080.
   - Corpo da Requisição (opcional):
     ```json
       {
-   "name": "EmpresaX"
-}
-```
+       "name": "EmpresaX"}
+	```
   - Resposta do Servidor:
     ```json
     {
@@ -203,9 +201,8 @@ A aplicação estará disponível em http://localhost:8080.
 	"email": "empresa@mail.com",
 	"type": "company",
 	"balance": 0.00,
-	"fee": 2.00
-}
-```
+	"fee": 2.00}
+	```
 
 - **DELETE /users/:id**
   - Deleta um usuário pelo id.
