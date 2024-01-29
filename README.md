@@ -14,7 +14,7 @@ Iniciando...
 
 1. Clonar o Repositório:
 
-git clone https://github.com/vinisilvasn23/Teste_Java_Developer
+```git clone https://github.com/vinisilvasn23/Teste_Java_Developer```
 
 cd Teste_Java_Developer
 
@@ -43,8 +43,8 @@ A aplicação estará disponível em http://localhost:8080.
 	"email":"empresa@mail.com",
 	"type": "company",
 	"fee": 2
-}
-    ```
+}```
+
   - Resposta do Servidor:
     ```json
     {
@@ -77,8 +77,7 @@ A aplicação estará disponível em http://localhost:8080.
 	"type": "client",
 	"balance": 0,
 	"fee": null
-}
-    ```
+}```
 
 - **GET /users**
 
@@ -104,8 +103,7 @@ A aplicação estará disponível em http://localhost:8080.
 		"balance": 0.00,
 		"fee": 2.00
 	}
-]
-    ```
+]```
 
 - **POST /users/:id/deposit**
 
@@ -114,8 +112,7 @@ A aplicação estará disponível em http://localhost:8080.
     ```json
     {
   "value": 1000
-  }
-    ```
+  }```
   - Resposta do Servidor (exemplo):
    ```json
     {
@@ -126,8 +123,7 @@ A aplicação estará disponível em http://localhost:8080.
 	"type": "client"
 	"balance": 1000.00,
 	"fee": null
-}
-    ```
+}```
 
 - **POST /transactions**
 
@@ -139,8 +135,8 @@ A aplicação estará disponível em http://localhost:8080.
 	"companyId": 1,
 	"type": "transfer",
 	"amount": 5
-}
-    ```
+}```
+
   - Resposta do Servidor (exemplo):
    ```json
     {
@@ -166,8 +162,7 @@ A aplicação estará disponível em http://localhost:8080.
 	"amount": 5,
 	"type": "transfer",
 	"date": "2024-01-29T19:27:54.062+00:00"
-}
-    ```
+}```
 
 - **GET /users/:id**
 
@@ -182,8 +177,7 @@ A aplicação estará disponível em http://localhost:8080.
 	"type": "client",
 	"balance": 0.00,
 	"fee": null
-}
-    ```
+}```
 
 - **PATCH /users/:id**
 
@@ -192,8 +186,7 @@ A aplicação estará disponível em http://localhost:8080.
     ```json
       {
    "name": "EmpresaX"
-}
-    ```
+}```
   - Resposta do Servidor:
     ```json
     {
@@ -204,8 +197,7 @@ A aplicação estará disponível em http://localhost:8080.
 	"type": "company",
 	"balance": 0.00,
 	"fee": 2.00
-}
-    ```
+}```
 
 - **DELETE /users/:id**
   - Deleta um usuário pelo id.
