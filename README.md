@@ -9,23 +9,29 @@ Maven
 A aplicação possui o envio de notificação ao realizar uma transferência. Será notificado pelo email, então é necessário configurar as variáveis de ambiente.
 Está sendo ultilizado o banco de dados H2 database que opera em um modo "em memória", então as informações são deletadas após reiniciar a aplicação.
 
-Iniciando...
+##Iniciando...
 
 
 1. Clonar o Repositório:
 
-```git clone https://github.com/vinisilvasn23/Teste_Java_Developer```
+```bash
+git clone https://github.com/vinisilvasn23/Teste_Java_Developer
+```
 
 cd Teste_Java_Developer
 
-2. Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente
+2. Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente.
 
 3. Executar a Aplicação:
-   ```mvn clean install```
+   ```bash
+   mvn clean install
+   ```
 
-    ```mvn spring-boot:run```
+    ```bash
+   mvn spring-boot:run
+    ```
 
-4. Acessar a Aplicação:
+5. Acessar a Aplicação:
 
 A aplicação estará disponível em http://localhost:8080.
 
@@ -65,8 +71,8 @@ A aplicação estará disponível em http://localhost:8080.
 	"cpfCnpj":"12345678912",
 	"email":"client@mail.com",
 	"type": "client"
-}
-    `
+}```
+
   - Resposta do Servidor:
     ```json
     {
@@ -162,7 +168,8 @@ A aplicação estará disponível em http://localhost:8080.
 	"amount": 5,
 	"type": "transfer",
 	"date": "2024-01-29T19:27:54.062+00:00"
-}```
+}
+```
 
 - **GET /users/:id**
 
@@ -186,7 +193,8 @@ A aplicação estará disponível em http://localhost:8080.
     ```json
       {
    "name": "EmpresaX"
-}```
+}
+```
   - Resposta do Servidor:
     ```json
     {
@@ -197,11 +205,12 @@ A aplicação estará disponível em http://localhost:8080.
 	"type": "company",
 	"balance": 0.00,
 	"fee": 2.00
-}```
+}
+```
 
 - **DELETE /users/:id**
   - Deleta um usuário pelo id.
   - Resposta do Servidor (status code):
-    ```
+    ```bash
       204 No Content
     ```
